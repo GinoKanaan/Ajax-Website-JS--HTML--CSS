@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Website - Contact</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <img src="/img/Ajax-Emblema.png" alt="Ajax Logo">
+                </div>
+                <div class="logo-text">
+                    <a href="/index.html">Ajax Website</a>
+                    <div class="slogan">Welkom bij de mooiste club!</div>
+                </div>
+            </div>
+            <ul class="ulcodes">
+                <li class="navlist"><a href="/pages/overons.html">Over Ons</a></li>
+                <li class="navlist"><a href="/pages/quiz.html">Quiz</a></li>
+                <li class="navlist"><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <h1>Contact Ons</h1>
+        <form action="/submit-form" method="POST">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Verstuur">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left">Gino Kanaan</div>
+            <div class="center">HICOHO2Q</div>
+            <div class="right">ROC Hilversum</div>
+        </div>
+    </footer>
+</body>
+
+</html>

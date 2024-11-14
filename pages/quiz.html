@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Website - Quiz</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <img src="/img/Ajax-Emblema.png" alt="Ajax Logo">
+                </div>
+                <div class="logo-text">
+                    <a href="/index.html">Ajax Website</a>
+                    <div class="slogan">Welkom bij de mooiste club!</div>
+                </div>
+            </div>
+            <ul class="ulcodes">
+                <li class="navlist"><a href="/pages/overons.html">Over Ons</a></li>
+                <li class="navlist"><a href="/pages/quiz.html">Quiz</a></li>
+                <li class="navlist"><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <h1>Ajax Quiz</h1>
+
+        <div class="question" id="question1">
+            <p>1. Wie is de all-time topscorer van Ajax?</p>
+            <ul class="options">
+                <li><input type="radio" name="question1" value="wrong"> Johan Cruijff</li>
+                <li><input type="radio" name="question1" value="correct"> Piet van Reenen</li>
+                <li><input type="radio" name="question1" value="wrong"> Marco van Basten</li>
+                <li><input type="radio" name="question1" value="wrong"> Klaas-Jan Huntelaar</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question2">
+            <p>2. Hoeveel keer heeft Ajax de UEFA Champions League gewonnen?</p>
+            <ul class="options">
+                <li><input type="radio" name="question2" value="wrong"> 2 keer</li>
+                <li><input type="radio" name="question2" value="correct"> 4 keer</li>
+                <li><input type="radio" name="question2" value="wrong"> 3 keer</li>
+                <li><input type="radio" name="question2" value="wrong"> 5 keer</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question3">
+            <p>3. Welke speler kreeg de bijnaam 'De Piraat' bij Ajax?</p>
+            <ul class="options">
+                <li><input type="radio" name="question3" value="correct"> John Heitinga</li>
+                <li><input type="radio" name="question3" value="wrong"> Wesley Sneijder</li>
+                <li><input type="radio" name="question3" value="wrong"> Danny Blind</li>
+                <li><input type="radio" name="question3" value="wrong"> Rafael van der Vaart</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question4">
+            <p>4. Welke club is de grootste rivaal van Ajax?</p>
+            <ul class="options">
+                <li><input type="radio" name="question4" value="correct"> Feyenoord</li>
+                <li><input type="radio" name="question4" value="wrong"> PSV</li>
+                <li><input type="radio" name="question4" value="wrong"> AZ</li>
+                <li><input type="radio" name="question4" value="wrong"> FC Utrecht</li>
+            </ul>
+        </div>
+
+        <div class="question" id="question5">
+            <p>5. In welk jaar won Ajax voor het laatst de Champions League?</p>
+            <ul class="options">
+                <li><input type="radio" name="question5" value="correct"> 1995</li>
+                <li><input type="radio" name="question5" value="wrong"> 1996</li>
+                <li><input type="radio" name="question5" value="wrong"> 1994</li>
+                <li><input type="radio" name="question5" value="wrong"> 1993</li>
+            </ul>
+        </div>
+
+        <button class="submit-btn" onclick="submitQuiz()">Verzend Quiz</button>
+
+        <div class="result" id="result"></div>
+
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left">Gino Kanaan</div>
+            <div class="center">HICOHO2Q</div>
+            <div class="right">ROC Hilversum</div>
+        </div>
+    </footer>
+</body>
+
+</html>
